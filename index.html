@@ -6,79 +6,143 @@
     <title>Auto Estatisticas</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+
         body {
-            background-color: #1f1f1f; /* Cor de fundo escura e moderna */
+            background-color: #121212; 
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            color: #e0e0e0; /* Cor clara para contraste */
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #E0E0E0; 
         }
 
         h1 {
             text-align: center;
-            font-size: 4rem; /* Tamanho grande para o título */
-            margin: 2rem 0;
-            color: #8c8787; /* Cor vibrante e contrastante */
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fonte moderna e arrojada */
-            font-weight: 700; /* Fonte em negrito */
-            letter-spacing: 2px; /* Espaçamento entre letras */
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Sombra do texto para profundidade */
+            background-color: #E0E0E0;
+            padding: 40px;
+            margin: 0;
+            color: #121212; 
         }
 
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta a largura dos botões */
+            grid-template-columns: repeat(auto-fit, minmax(15%, 1fr)); 
             gap: 20px;
             padding: 20px;
-            max-width: 1200px; /* Largura máxima */
-            margin: 0 auto; /* Centraliza o container */
+            max-width: 80%;
+            margin: 0 auto; 
         }
 
         button {
-            background-color: #7d7b7b; /* Cor sólida para o fundo do botão */
-            color: #fff; /* Cor do texto */
-            border: 2px solid #444; /* Borda metálica */
+            background-color: #E0E0E0; 
+            color: #121212; 
             width: 100%;
-            height: 80px; /* Altura dos botões */
-            padding: 0; /* Remove padding para ajustar altura */
+            height: 80px; 
+            padding: 0; 
             text-align: center;
-            border-radius: 12px; /* Bordas arredondadas */
-            font-size: 1.25rem; /* Tamanho da fonte */
+            border-radius: 12px; 
+            font-size: 1.25rem; 
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(0, 0, 0, 0.3); /* Sombras sutis */
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(0, 0, 0, 0.3); 
             display: flex;
-            align-items: center; /* Centraliza o texto verticalmente */
-            justify-content: center; /* Centraliza o texto horizontalmente */
+            align-items: center; 
+            justify-content: center; 
         }
 
         button:hover {
-            background-color: #444; /* Cor sólida para o fundo ao passar o mouse */
-            box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombras mais intensas ao passar o mouse */
-            transform: translateY(-2px); /* Efeito de elevação suave */
+            background-color: #444; 
+            box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.4); 
+            transform: translateY(-2px); 
         }
 
         a {
             text-decoration: none;
         }
 
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px; /* Bordas arredondadas das imagens */
-            margin-top: 10px;
+        footer {
+            background-color: #121212;
+            color: #E0E0E0;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 90%;
+            bottom: 0;
+            font-size: 0.9rem;
         }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #E0E0E0;
+            text-decoration: none;
+            font-weight: bold;
+        } 
+
+        footer a:hover {
+            color: #444;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
+            }
+
+            button {
+                font-size: 1.2rem; /* Menor tamanho de fonte em telas menores */
+                height: 70px; /* Ajusta altura do botão */
+            }
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+            h1 {
+                font-size: 2rem; 
+                padding: 30px;
+            }
+
+            button {
+                font-size: 1.1rem;
+                height: 60px; 
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr; 
+                gap: 15px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem; 
+                padding: 20px;
+            }
+
+            button {
+                font-size: 1rem;
+                height: 50px; 
+            }
+        }
+
     </style>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9037049054449018"
-     crossorigin="anonymous"></script>
-    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9037049054449018"
+crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <h1>Marcas</h1>
+    <h1>Auto Estatisticas</h1>
 
     <div class="container">
-        <a href="Alfa Romeo/Alfa Romeo.html"><button>Alfa Romeod</button></a>
+        <a href="Alfa Romeo/Alfa Romeo.html"><button>Alfa Romeo</button></a>
         <a href="Aston Martin/Aston Martin.html"><button>Aston Martin</button></a>
         <a href="Audi/Audi.html"><button>Audi</button></a>
         <a href="BMW.html"><button>BMW</button></a>
@@ -115,5 +179,11 @@
         <a href="Volkswagen.html"><button>Volkswagen</button></a>
         <a href="Volvo.html"><button>Volvo</button></a>
     </div>
+
+    <footer>       
+         <p>Bem-vindo ao nosso portal dedicado a fornecer informações detalhadas sobre a frota de carros do Brasil. Aqui, você encontrará dados completos e atualizados, organizados por marca, modelo e ano de fabricação, para facilitar sua pesquisa sobre os veículos em circulação no país. O site oferece uma visão clara e precisa do panorama automotivo brasileiro, permitindo que você explore a distribuição das frotas de diferentes montadoras, entenda a popularidade de cada modelo e fique por dentro das tendências do mercado. Se você busca conhecer a frota de carros por região, marca ou ano específico, nosso site oferece uma navegação rápida e eficiente.</p>
+         <p>&copy; 2025 Auto Estatisticas - Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
