@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade Alfa Romeo 33</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0;
+            color: #121212;
+            padding: 40px;
+            background-color: #E0E0E0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3%;
+        }
+
+        .table-container {
+            width: 40%;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            margin-left: 5%;
+            border-collapse: collapse;
+        }
+
+        table tr td:nth-child(2) {
+            width: 200px; 
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #E0E0E0;
+        }
+
+        td {
+            color: #E0E0E0;
+        }
+
+        th {
+            background-color: #E0E0E0;
+        }
+
+        .sub-row {
+            display: none; /* Linhas ocultas inicialmente */
+            background-color: #333; /* Mantendo a cor igual ao restante da tabela */
+        }
+
+        .toggle-btn {
+            cursor: pointer;
+            color: #484c51;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .image-container {
+            width: 35%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-items: flex-end;
+            margin-right: 7%;
+        }
+
+        .image-container img {
+            width: 100%;  
+            height: 100%; 
+            object-fit: cover;  
+            margin-bottom: 10px; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Alfa Romeo 33</h1>
+
+    <div class="container">
+        <div class="table-container">
+
+            <table>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Quantidade</th>
+                    </tr>
+
+                    <tr>
+                        <td><span class="toggle-btn" onclick="toggleRow(0)">&#9660;</span> 1984</td>
+                        <td>1</td>
+                    </tr>
+                    <tr id="sub-row-0" class="sub-row">
+                        <td>33</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <th>Total</th>
+                        <th>1</th>
+                    </tr>
+            </table>
+
+        </div>
+
+        <div class="image-container">
+            <img src="FOTOS/33.jpg" alt="Imagem 1">
+            <img src="FOTOS/33 2.jpg" alt="Imagem 2">
+            <img src="FOTOS/33 3.jpg" alt="Imagem 3">
+            <img src="FOTOS/33 4.jpg" alt="Imagem 4">
+        </div>
+
+
+    <script>
+        function toggleRow(index) {
+            var subRow = document.getElementById('sub-row-' + index);
+            var toggleBtn = subRow.previousElementSibling.querySelector('.toggle-btn');
+            
+            // Verifica se a linha está oculta ou visível
+            if (subRow.style.display === 'none' || subRow.style.display === '') {
+                subRow.style.display = 'table-row'; // Mostra a linha
+                toggleBtn.innerHTML = '&#9650;'; // Altera a setinha para cima
+            } else {
+                subRow.style.display = 'none'; // Esconde a linha
+                toggleBtn.innerHTML = '&#9660;'; // Altera a setinha para baixo
+            }
+        }
+    </script>
+
+</body>
+</html>
