@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade de Alfa Romeo 164 no Brasil</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #E0E0E0;
+        }
+
+        h1 {
+            margin: 0;
+            color: #121212;
+            padding: 40px;
+            background-color: #E0E0E0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2%;
+            flex-direction: row; 
+        }
+
+        .table-container {
+            width: 100%;
+            max-width: 50%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 2px solid #E0E0E0;
+        }
+
+        th {
+            background-color: #E0E0E0;
+            color: #121212;
+        }
+
+        table tr td:nth-child(2) {
+            width: 200px; 
+        }
+
+        .toggle-btn {
+            cursor: pointer;
+            color: #484c51;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .sub-row {
+            display: none; 
+            background-color: #333;
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-items: center;
+            width: 100%;
+            max-width: 40%;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+                padding: 20px;
+            }
+
+            .container {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            .table-container, .image-container {
+                width: 100%;
+                max-width: 100%;
+                margin-right: 0;
+            }
+
+            .image-container {
+                grid-template-columns: 1fr; 
+                margin-top: 20px;
+            }
+
+            th, td {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+
+            .toggle-btn {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+                padding: 15px;
+            }
+
+            .toggle-btn {
+                font-size: 14px;
+            }
+
+            .table-container {
+                padding: 0 10px;
+            }
+        }
+
+    </style>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9037049054449018"
+crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1>Alfa Romeo 164</h1>
+
+    <div class="container">
+        <div class="table-container">
+
+            <table>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Quantidade</th>
+                    </tr>
+
+                    <tr>
+                        <td><span class="toggle-btn" onclick="toggleRow([0,1])">&#9660;</span> 1988</td>
+                        <td>3</td>
+                    </tr>
+                    <tr id="sub-row-0" class="sub-row">
+                        <td>164 2.0 TS</td>
+                        <td>2</td>
+                    </tr>
+                    <tr id="sub-row-1" class="sub-row">
+                        <td>164 3.0 V6</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="toggle-btn" onclick="toggleRow([2, 3, 4, 5])">&#9660;</span> 1990</td>
+                        <td>53</td>
+                    </tr>
+                    <tr id="sub-row-2" class="sub-row">
+                        <td>164 2.0 T</td>
+                        <td>3</td>
+                    </tr>
+                    <tr id="sub-row-3" class="sub-row">
+                        <td>164 2.0 TS</td>
+                        <td>1</td>
+                    </tr>
+                    <tr id="sub-row-4" class="sub-row">
+                        <td>164 3.0 V6</td>
+                        <td>48</td>
+                    </tr>
+                    <tr id="sub-row-5" class="sub-row">
+                        <td>164 S</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="toggle-btn" onclick="toggleRow([6,7,8])">&#9660;</span> 1991</td>
+                        <td>79</td>
+                    </tr>
+                    <tr id="sub-row-6" class="sub-row">
+                        <td>164 2.0 T</td>
+                        <td>3</td>
+                    </tr>
+                    <tr id="sub-row-7" class="sub-row">
+                        <td>164 2.0 TS</td>
+                        <td>1</td>
+                    </tr>
+                    <tr id="sub-row-8" class="sub-row">
+                        <td>164 3.0 V6</td>
+                        <td>75</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="toggle-btn" onclick="toggleRow([9,10])">&#9660;</span> 1992</td>
+                        <td>15</td>
+                    </tr>
+                    </tr>
+                    <tr id="sub-row-9" class="sub-row">
+                        <td>164 2.0 TS</td>
+                        <td>1</td>
+                    </tr>
+                    <tr id="sub-row-10" class="sub-row">
+                        <td>164 3.0 V6</td>
+                        <td>14</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="toggle-btn" onclick="toggleRow([11,12])">&#9660;</span> 1993</td>
+                        <td>843</td>
+                    </tr>
+                    <tr id="sub-row-11" class="sub-row">
+                        <td>164 2.0 T</td>
+                        <td>2</td>
+                    </tr>
+                    <tr id="sub-row-12" class="sub-row">
+                        <td>164 3.0 V6</td>
+                        <td>841</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="toggle-btn" onclick="toggleRow([13,14])">&#9660;</span> 1994</td>
+                        <td>2595</td>
+                    </tr>
+                    <tr id="sub-row-13" class="sub-row">
+                        <td>164 24V</td>
+                        <td>2</td>
+                    </tr>
+                    <tr id="sub-row-14" class="sub-row">
+                        <td>164 3.0 V6</td>
+                        <td>2593</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="toggle-btn" onclick="toggleRow([15,16,17,18])">&#9660;</span> 1995</td>
+                        <td>2359</td>
+                    </tr>
+                    <tr id="sub-row-15" class="sub-row">
+                        <td>164 2.0 T</td>
+                        <td>3</td>
+                    </tr>
+                    <tr id="sub-row-16" class="sub-row">
+                        <td>164 2.0 TS</td>
+                        <td>1</td>
+                    </tr>
+                    <tr id="sub-row-17" class="sub-row">
+                        <td>164 24V</td>
+                        <td>1742</td>
+                    </tr>
+                    <tr id="sub-row-18" class="sub-row">
+                        <td>164 3.0 V6</td>
+                        <td>613</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="toggle-btn" onclick="toggleRow([19,20,21])">&#9660;</span>N/A</td>
+                        <td>262</td>
+                    </tr>
+                    <tr id="sub-row-19" class="sub-row">
+                        <td>164 2.0 T</td>
+                        <td>1</td>
+                    </tr>
+                    </tr>
+                    <tr id="sub-row-20" class="sub-row">
+                        <td>164 24V</td>
+                        <td>65</td>
+                    </tr>
+                    <tr id="sub-row-21" class="sub-row">
+                        <td>164 3.0 V6</td>
+                        <td>196</td>
+                    </tr>
+
+                    <tr>
+                        <th>Total</th>
+                        <th>6209</th>
+                    </tr>
+            </table>
+
+        </div>
+
+        <div class="image-container">
+            <img src="FOTOS/164.jpg" alt="Imagem 1">
+            <img src="FOTOS/164 2.jpg" alt="Imagem 2">
+            <img src="FOTOS/164 3.jpg" alt="Imagem 3">
+            <img src="FOTOS/164 4.jpg" alt="Imagem 4">
+        </div>
+
+
+        <script>
+            // Função para alternar a visibilidade das sublinhas
+            function toggleRow(rows) {
+                // Itera sobre os índices das sublinhas e alterna a visibilidade delas
+                rows.forEach(function(rowIndex) {
+                    var row = document.getElementById('sub-row-' + rowIndex);
+                    if (row.style.display === 'none' || row.style.display === '') {
+                        row.style.display = 'table-row'; // Exibe a sublinha
+                    } else {
+                        row.style.display = 'none'; // Oculta a sublinha
+                    }
+                });
+            }
+        
+            // Inicializa o estado das sublinhas como oculto
+            window.onload = function() {
+                var subRows = document.querySelectorAll('.sub-row');
+                subRows.forEach(function(row) {
+                    row.style.display = 'none'; // Oculta todas as sublinhas inicialmente
+                });
+            };
+        </script>
+
+</body>
+</html>
